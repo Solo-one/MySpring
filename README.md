@@ -1,6 +1,8 @@
 # MySpring
-Spring 脚手架，基于Spring boot/cloud.  
+1：Spring 脚手架，基于Spring boot/cloud.  
 
-项目由Maven构建  
+2：项目由Maven构建  
 
-方便自己使用快速搭建 Spring 项目 
+3：方便自己快速搭建 Spring 项目
+
+4：方便有需要的人
