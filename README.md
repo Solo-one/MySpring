@@ -1,5 +1,5 @@
 # MySpring
-1：Spring 脚手架，基于Spring boot/cloud.  
+1：Spring 脚手架，基于Spring boot/cloud.  （Spring Boot版本 1.5.10）
 
 2：项目由Maven构建  
 
