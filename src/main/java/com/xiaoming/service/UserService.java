@@ -12,4 +12,6 @@ public interface UserService {
 
     public List<UserInfo> queryUsers();
 
+    public UserInfo queryUserById(String id);
+
 }

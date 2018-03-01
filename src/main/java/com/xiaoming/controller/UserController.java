@@ -45,4 +45,13 @@ public class UserController {
         return new ArrayList<>();
     }
 
+    @RequestMapping("/findUserById")
+    public UserInfo queryUserById(@RequestParam(required = false) String id) {
+        UserInfo userInfo = userService.queryUserById(id);
+        if (userInfo != null) {
+            return userInfo;
+        }
+        return new UserInfo();
+    }
+
 }
