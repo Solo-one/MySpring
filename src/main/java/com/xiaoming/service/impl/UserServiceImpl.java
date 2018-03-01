@@ -3,6 +3,7 @@ package com.xiaoming.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -21,8 +22,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     UserMapper userDao;
 
+    @Cacheable(value = "user", key = "'User:all'")
     @Override
     public List<UserInfo> queryUsers() {
+        System.out.println("queryUsers not in redis cache");
         // PageHelper 分页
         PageHelper.startPage(1, 2, true);
         List<UserInfo> list = userDao.queryUsers();
@@ -31,4 +34,10 @@ public class UserServiceImpl implements UserService {
         return list;
     }
 
+    @Cacheable(value = "user", key = "'User:'+#id")
+    @Override
+    public UserInfo queryUserById(String id) {
+        System.out.println("queryUserById not in redis cache");
+        return userDao.queryUserById(id);
+    }
 }

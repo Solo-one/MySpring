@@ -17,4 +17,8 @@
     <select id="queryUsers" resultMap="UserMap">
         select * from u_user
     </select>
+
+    <select id="queryUserById" parameterType="String" resultMap="UserMap">
+        select * from u_user where user_id = #{id}
+    </select>
 </mapper>

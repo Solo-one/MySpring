@@ -14,4 +14,6 @@ import com.xiaoming.bean.UserInfo;
 public interface UserMapper {
 
     public List<UserInfo> queryUsers();
+
+    public UserInfo queryUserById(String id);
 }
