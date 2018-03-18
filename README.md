@@ -3,6 +3,7 @@
    >  技术栈 ：SpringMVC + Mybatis + Mysql + Redis   
    >  增加定时任务，周期任务  
    >  增加异步任务 AsyncTask
+   >  todo
  
 
 ## 2：项目由Maven构建  
