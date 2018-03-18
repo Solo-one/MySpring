@@ -1,9 +1,9 @@
 # MySpring
 ## 1：Spring 脚手架，基于Spring boot/cloud.  （Spring Boot版本 1.5.10）  
-   >  技术栈 ：SpringMVC + Mybatis + Mysql + Redis   
-   >  增加定时任务，周期任务  
-   >  增加异步任务 AsyncTask
-   >  TODO
+>> 技术栈 ：SpringMVC + Mybatis + Mysql + Redis   
+> 增加定时任务，周期任务  
+> 增加异步任务 AsyncTask  
+> TODO
  
 
 ## 2：项目由Maven构建  
